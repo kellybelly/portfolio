@@ -1,0 +1,121 @@
+@import 'globals';
+
+#resume {
+  margin-top: $large-margin;
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6em;
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: $small-margin / 2;
+    font-size: 20px;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  h4 {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .info {
+    margin-top: -1px;
+  }
+  @include tablet {
+    margin-top: 0;
+    h3 {
+      margin-bottom: $small-margin;
+      line-height: 1.2em;
+    }
+  }
+  @include phone {
+    padding: 0 $small-margin;
+    h3 {
+      margin-bottom: $small-margin / 2;
+    }
+    h4 {
+      margin-bottom: $medium-margin;
+    }
+    .info {
+      text-align: left;
+    }
+  }
+}
+
+.resume-section {
+  margin: 0 0 ($large-margin * 2);
+  @include phone {
+    margin-bottom: $large-margin;
+    > div {
+      padding: 0 $medium-margin;
+    }
+  }
+}
+
+.resume-experience-section {
+  margin: 0 0 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 18px;
+    margin: $small-margin 0 $medium-margin;
+  }
+  @include phone {
+    margin-bottom: $large-margin;
+  }
+}
+
+.resume-skills {
+  font-size: 0;
+}
+
+.resume-skill {
+  display: inline-block;
+  padding: $small-margin;
+  border: 1px solid $secondary-teal;
+  border-radius: 8px;
+  margin: 0 $small-margin $small-margin 0;
+  color: $secondary-teal;
+  font-family: $code-font;
+  font-size: 12px;
+  line-height: 1.3em;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.resume-skill-section {
+  width: ($column-10-width - ($gutter-width * 3)) / 4;
+  margin-top: -1px;
+  ul {
+    padding: 0;
+    margin: 5px 0 0;
+    list-style-type: none;
+    line-height: 1.4em;
+  }
+  @include desktop {
+    width: ($lg-column-10-width - ($lg-gutter-width * 3)) / 4;
+  }
+  @include tablet {
+    width: ($md-column-10-width - ($md-gutter-width * 3)) / 4;
+    &:last-child {
+      margin-top: 18px;
+    }
+  }
+  @include phone {
+    width: 100%;
+    margin-bottom: $medium-margin;
+    &:last-child {
+      margin: 0 0 $small-margin;
+    }
+  }
+}

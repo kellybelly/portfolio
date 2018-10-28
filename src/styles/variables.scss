@@ -1,0 +1,81 @@
+// typography
+// --------------------------------------------------
+$primary-font:      'Lato', sans-serif;
+$secondary-font:    'Raleway', sans-serif;
+$code-font:         'Source Code Pro', monospace;
+
+// color
+// --------------------------------------------------
+$black:                 #333333;
+$white:                 #ffffff;
+
+$primary-pink:          #ed7373;
+$secondary-teal:        #3a718c;
+$secondary-turquoise:   #5ea3a6;
+$secondary-pink:        #f0bebe;
+
+// grid
+// --------------------------------------------------
+$grid-width:        1200px;
+$column-width:      76px;
+$gutter-width:      24px;
+
+$column-1-width:    $column-width;
+$column-2-width:    $column-1-width + $gutter-width + $column-width;
+$column-3-width:    $column-2-width + $gutter-width + $column-width;
+$column-4-width:    $column-3-width + $gutter-width + $column-width;
+$column-5-width:    $column-4-width + $gutter-width + $column-width;
+$column-6-width:    $column-5-width + $gutter-width + $column-width;
+$column-7-width:    $column-6-width + $gutter-width + $column-width;
+$column-8-width:    $column-7-width + $gutter-width + $column-width;
+$column-9-width:    $column-8-width + $gutter-width + $column-width;
+$column-10-width:   $column-9-width + $gutter-width + $column-width;
+$column-11-width:   $column-10-width + $gutter-width + $column-width;
+$column-12-width:   $column-11-width + $gutter-width + $column-width;
+
+$small-margin:      8px;
+$medium-margin:     16px;
+$large-margin:      24px;
+
+// grid - large
+// --------------------------------------------------
+$lg-grid-width:        984px;
+$lg-column-width:      58px;
+$lg-gutter-width:      24px;
+
+$lg-column-1-width:    $lg-column-width;
+$lg-column-2-width:    $lg-column-1-width + $lg-gutter-width + $lg-column-width;
+$lg-column-3-width:    $lg-column-2-width + $lg-gutter-width + $lg-column-width;
+$lg-column-4-width:    $lg-column-3-width + $lg-gutter-width + $lg-column-width;
+$lg-column-5-width:    $lg-column-4-width + $lg-gutter-width + $lg-column-width;
+$lg-column-6-width:    $lg-column-5-width + $lg-gutter-width + $lg-column-width;
+$lg-column-7-width:    $lg-column-6-width + $lg-gutter-width + $lg-column-width;
+$lg-column-8-width:    $lg-column-7-width + $lg-gutter-width + $lg-column-width;
+$lg-column-9-width:    $lg-column-8-width + $lg-gutter-width + $lg-column-width;
+$lg-column-10-width:   $lg-column-9-width + $lg-gutter-width + $lg-column-width;
+$lg-column-11-width:   $lg-column-10-width + $lg-gutter-width + $lg-column-width;
+$lg-column-12-width:   $lg-column-11-width + $lg-gutter-width + $lg-column-width;
+
+// grid - medium
+// --------------------------------------------------
+$md-grid-width:        768px;
+$md-column-width:      48px;
+$md-gutter-width:      16px;
+
+$md-column-1-width:    $md-column-width;
+$md-column-2-width:    $md-column-1-width + $md-gutter-width + $md-column-width;
+$md-column-3-width:    $md-column-2-width + $md-gutter-width + $md-column-width;
+$md-column-4-width:    $md-column-3-width + $md-gutter-width + $md-column-width;
+$md-column-5-width:    $md-column-4-width + $md-gutter-width + $md-column-width;
+$md-column-6-width:    $md-column-5-width + $md-gutter-width + $md-column-width;
+$md-column-7-width:    $md-column-6-width + $md-gutter-width + $md-column-width;
+$md-column-8-width:    $md-column-7-width + $md-gutter-width + $md-column-width;
+$md-column-9-width:    $md-column-8-width + $md-gutter-width + $md-column-width;
+$md-column-10-width:   $md-column-9-width + $md-gutter-width + $md-column-width;
+$md-column-11-width:   $md-column-10-width + $md-gutter-width + $md-column-width;
+$md-column-12-width:   $md-column-11-width + $md-gutter-width + $md-column-width;
+
+// grid - small
+// --------------------------------------------------
+$sm-grid-width:        100%;
+$sm-gutter-width:      16px;

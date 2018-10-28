@@ -1,0 +1,211 @@
+@import 'globals';
+
+#work {
+  flex: 1;
+  margin: $large-margin 0 0 -$large-margin;
+  @include phone {
+    padding: 0 $small-margin;
+  }
+}
+
+.work-item {
+  height: 400px;
+  margin-bottom: $large-margin * 2;
+  &:nth-child(even) {
+    padding-left: $large-margin / 2;
+    margin-right: 0;
+  }
+  &:nth-child(odd) {
+    padding-right: $large-margin / 2;
+  }
+  > div {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  @include desktop {
+    height: 300px;
+  }
+  @include tablet {
+    height: 250px;
+  }
+  @include phone {
+    height: auto;
+    margin: 0 0 $medium-margin;
+    &:nth-child(even) {
+      padding-left: 0;
+    }
+    &:nth-child(odd) {
+      padding-right: 0;
+    }
+  }
+}
+
+.work-image {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.work-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  padding: $large-margin;
+  color: $white;
+  font-size: 16px;
+  line-height: 1.3em;
+  &.expanded {
+    height: auto;
+    .expand-collapse {
+      transform: rotate(180deg);
+    }
+  }
+  > div {
+    height: 100%;
+    overflow: hidden;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: $white;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid $white;
+    }
+  }
+  .expand-collapse {
+    $circle-diameter: 32px;
+    $circle-border-width: 2px;
+    $arrow-width: 16px;
+    $arrow-height: 10px;
+    position: absolute;
+    top: $circle-diameter / -2;
+    left: 50%;
+    width: $circle-diameter;
+    height: $circle-diameter;
+    margin-left: $circle-diameter / -2;
+    border: 2px solid $white;
+    border-radius: 50%;
+    img {
+      position: absolute;
+      top: ($circle-diameter - $circle-border-width - $circle-border-width - $arrow-height) / 2;
+      left: ($circle-diameter - $circle-border-width - $circle-border-width - $arrow-width) / 2
+    }
+  }
+  @include desktop {
+    height: 95px;
+    padding: $medium-margin;
+    &.expanded {
+      height: auto;
+    }
+  }
+  @include tablet {
+    height: 85px;
+    font-size: 14px;
+    &.expanded {
+      height: auto;
+    }
+  }
+  @include phone {
+    position: relative;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5em;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.75;
+      z-index: -1;
+      .teal-bg {
+        background: $secondary-teal;
+      }
+      .turquoise-bg {
+        background: $secondary-turquoise;
+      }
+      .pink-bg {
+        background: $secondary-pink;
+      }
+    }
+    .expand-collapse {
+      display: none;
+    }
+  }
+}
+
+.teal-filter:before,
+.teal-bg {
+  background: $secondary-teal;
+}
+
+.turquoise-filter:before,
+.turquoise-bg {
+  background: $secondary-turquoise;
+}
+
+.pink-filter:before,
+.pink-bg {
+  background: $secondary-pink;
+}
+
+.work-info {
+  padding: 0 ($large-margin * 2);
+  font-size: 32px;
+  line-height: 1.5em;
+  p {
+    margin: 0;
+  }
+  a {
+    color: $primary-pink;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid $primary-pink;
+    }
+  }
+  @include desktop {
+    font-size: 24px;
+  }
+  @include tablet {
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 20px;
+  }
+  @include phone {
+    padding: 0 32px 32px;
+    text-align: center;
+  }
+}
+
+.work-netsocket {
+  .work-image {
+    margin-top: 85px;
+    @include desktop {
+      margin-top: 52px;
+    }
+    @include tablet {
+      margin-top: 42px;
+    }
+    @include phone {
+      margin: $large-margin 0;
+    }
+  }
+}

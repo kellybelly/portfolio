@@ -1,0 +1,52 @@
+#about {
+  flex: 1;
+  margin: $large-margin 0 ($large-margin * 3);
+  overflow: auto;
+  @include phone {
+    margin-bottom: 0;
+  }
+}
+
+.about-img {
+  img {
+    border-radius: 50%;
+  }
+  @include phone {
+    margin: 0 ($large-margin * 2);
+  }
+}
+
+.about-text {
+  padding-left: $large-margin;
+  margin-top: 3px;
+  font-size: 24px;
+  line-height: 1.4em;
+  @include desktop {
+    margin-top: -18px;
+    font-size: 20px;
+  }
+  @include tablet {
+    margin-top: -14px;
+    font-size: 16px;
+  }
+  @include phone {
+    margin-top: 0;
+    padding: $large-margin;
+    font-size: 20px;
+    text-align: center;
+    p {
+      margin: $large-margin 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.about-gdi {
+  color: $primary-pink;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 2px solid $primary-pink;
+  }
+}

@@ -1,29 +1,29 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container">
+    <div id="header">
+      <router-link to="/"><h1>Kelly Tran</h1></router-link>
+      <div class="nav">
+        <router-link to="/">About</router-link>
+        <router-link to="/work">Work</router-link>
+      </div>
     </div>
+
     <router-view/>
+
+    <div id="footer">
+      <span>&copy; 2018 Kelly Tran</span>
+      <div class="nav">
+        <a href="mailto:kelly.v.tran@gmail.com">Email</a>
+        |
+        <a href="https://github.com/kellybelly">GitHub</a>
+        |
+        <a href="https://www.linkedin.com/in/kelly-tran-765b227a/">LinkedIn</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  @import './styles/globals.scss';
+  @import './styles/base.scss';
 </style>

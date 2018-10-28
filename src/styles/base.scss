@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: $primary-font;
+  color: $black;
+  @include phone {
+    padding: 0;
+  }
+}
+
+#header {
+  border-bottom: 1px solid $black;
+  margin: 30px 0 $large-margin;
+  overflow: hidden;
+  h1 {
+    float: left;
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $black;
+  }
+  .nav {
+    float: right;
+    margin: 17px ($large-margin / -2) 0 0 ;
+    font-family: $secondary-font;
+    font-size: 16px;
+    text-transform: uppercase;
+    a {
+      padding: 10px 0;
+      margin: 0 ($large-margin / 2);
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  .router-link-exact-active {
+    border-bottom: 4px solid $black;
+  }
+  @include phone {
+    padding-left: $large-margin / 2;
+    margin: ($large-margin / 2) 0 $large-margin;
+    .nav {
+      margin-right: 0;
+      a {
+        padding-left: $large-margin / 2;
+        padding-right: $large-margin / 2;
+        margin: 0;
+      }
+    }
+  }
+}
+
+#footer {
+  padding: $medium-margin 0;
+  border-top: 1px solid $black;
+  margin: $large-margin 0 33px;
+  font-family: $secondary-font;
+  font-size: 12px;
+  .nav {
+    float: right;
+    margin-right: $large-margin / -2;
+    font-weight: 600;
+    text-transform: uppercase;
+    a {
+      padding: $large-margin / 2;
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  @include phone {
+    padding: $large-margin 0 $large-margin ($large-margin / 2);
+    margin-bottom: 0;
+    .nav {
+      margin-right: 0;
+    }
+  }
+}
+
+a,
+button {
+  &:focus {
+    outline: none;
+  }
+}
