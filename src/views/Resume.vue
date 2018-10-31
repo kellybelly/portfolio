@@ -15,34 +15,22 @@
           </div>
           <ul class="col col-10 col-last">
             <li>
-              Championed the needs of Content, Design, Engineering, and Marketing teams
+              Designed and managed development of improvements to Wiki feature, which accounts for the most  logged out traffic, leading to an 50% increase in both signup and purchase rates from those pages
             </li>
             <li>
-              Created short (monthly), medium (quarterly), and long (yearly and beyond) term
-              roadmaps
+              Designed new Gift Subscription feature and managed its development, leading to an increase in revenue during the 2017 holiday season
             </li>
             <li>
-              Led project to improve to wiki pages, increasing signup and purchase rates by 50%
+              Designed new Trial Subscription feature and managed its development, leading to a decrease in churn rate and number of refunds
             </li>
             <li>
-              Led new ‘gift subscription’ feature as a result of user research, increasing revenue
-              during the 2017 holiday season
+              Designed new Groups feature and managed its development, leading to higher user engagement and  retention
             </li>
             <li>
-              Led new ‘trial subscription’ feature as a result of user research, reducing churn
-              rate and refunds
+              Designed and managed development of 100 Day Summer Challenge, leading to an increase in signup rates during the 2018 summer season
             </li>
             <li>
-              Led new ‘user groups’ feature as a result of user research, improving user engagement
-              and retention
-            </li>
-            <li>
-              Led ‘100 Day Summer Challenge’ project which increased signup rates and the teacher
-              userbase
-            </li>
-            <li>
-              Led external project with INFINITI for their Engineering Challenge: gathered
-              requirements, wireframed, and prioritized
+              Designed and managed development of external project with INFINITI, leading to a new source of revenue for the company
             </li>
           </ul>
           <div class="resume-skills col col-10 col-last">
@@ -71,30 +59,19 @@
           </div>
           <ul class="col col-10 col-last">
             <li>
-              Frontend team lead: researched and proposed architecture upgrades, conceptualized new
-              features with product and design teams, reviewed pull requests, and triaged features
-              and bugs
+              Implemented new Courses feature, which became the main source of revenue for the company
             </li>
             <li>
-              Implemented frontend for new ‘courses’ feature which became the main sourse of
-              revenue for the company
+              Implemented new Wikis feature, which brings over 600K unique, unregistered users per month
             </li>
             <li>
-              Implemented frontend for new ‘wikis’ feature which brought over 600K unique, anon
-              visits per month
+              Designed and implemented improvements to mobile web performance, leading to a faster initial web page load
             </li>
             <li>
-              Led project to improve mobile web performance by reducing the initial HTML file size
-              and asynchronously loading JS, CSS, and sprite files not needed for the initial web
-              page load
+              Led joint project with design team to standardize desktop and mobile web designs, reducing overall size of stylesheets by 40%
             </li>
             <li>
-              Led joint project with design team to standardize desktop and mobile web designs,
-              reducing overall size of stylesheets by 40%
-            </li>
-            <li>
-              Implemented automated visual regression tests using PhantomCSS, PhantomJS, CasperJS,
-              and Jenkins, which caught many visual bugs per day
+              Designed and implemented automated visual regression tests, which caught many visual bugs per day before they are deployed
             </li>
           </ul>
           <div class="resume-skills col col-10 col-last">
@@ -213,10 +190,10 @@
         <div class="col resume-skill-section">
           <h3>Programming Languages</h3>
           <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
             <li>HTML</li>
             <li>CSS/SCSS/LESS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
           </ul>
         </div>
         <div class="col resume-skill-section">
