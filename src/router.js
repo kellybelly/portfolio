@@ -5,12 +5,14 @@ import About from './views/About.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
-      name: 'about',
+      component: About
+    },
+    {
+      path: '/about',
       component: About
     },
     // route level code-splitting
@@ -18,13 +20,15 @@ export default new Router({
     // which is lazy-loaded when the route is visited.
     {
       path: '/work',
-      name: 'work',
       component: () => import('./views/Work.vue')
     },
     {
       path: '/resume',
-      name: 'resume',
       component: () => import('./views/Resume.vue')
+    },
+    {
+      path: '*',
+      component: () => import('./views/404.vue')
     }
   ]
 })

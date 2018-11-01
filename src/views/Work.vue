@@ -8,7 +8,7 @@
       </p>
 
       <p>
-        <a href="/resume">See my full resume. &rarr;</a>
+        <router-link to="/resume">See my full resume. &rarr;</router-link>
       </p>
     </div></div>
 
