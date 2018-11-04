@@ -18,11 +18,21 @@
   &:nth-child(odd) {
     padding-right: $large-margin / 2;
   }
+  &:not(:first-child) > div {
+    box-shadow: 0px 0px 8px #cccccc;
+  }
   > div {
     float: left;
     position: relative;
     width: 100%;
     height: 100%;
+  }
+  a {
+    color: $primary-pink;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid $primary-pink;
+    }
   }
   @include desktop {
     height: 300px;
@@ -50,7 +60,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
   }
   img {
     display: block;
@@ -63,13 +73,15 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 110px;
-  padding: $large-margin;
-  color: $white;
+  height: 100px;
+  padding: $medium-margin;
+  background: $white;
+  color: $black;
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 1.4em;
   &.expanded {
     height: auto;
+    min-height: 100px;
     .expand-collapse {
       transform: rotate(180deg);
     }
@@ -81,17 +93,8 @@
   p {
     margin: 0;
   }
-  a {
-    color: $white;
-    font-weight: 600;
-    text-decoration: none;
-    &:hover {
-      border-bottom: 2px solid $white;
-    }
-  }
   .expand-collapse {
     $circle-diameter: 32px;
-    $circle-border-width: 2px;
     $arrow-width: 16px;
     $arrow-height: 10px;
     position: absolute;
@@ -100,24 +103,22 @@
     width: $circle-diameter;
     height: $circle-diameter;
     margin-left: $circle-diameter / -2;
-    border: 2px solid $white;
+    border: 0;
     border-radius: 50%;
+    box-shadow: 0px 0px 2px #cccccc;
+    cursor: pointer;
     img {
       position: absolute;
-      top: ($circle-diameter - $circle-border-width - $circle-border-width - $arrow-height) / 2;
-      left: ($circle-diameter - $circle-border-width - $circle-border-width - $arrow-width) / 2
-    }
-  }
-  @include desktop {
-    height: 95px;
-    padding: $medium-margin;
-    &.expanded {
-      height: auto;
+      top: ($circle-diameter - $arrow-height) / 2;
+      left: ($circle-diameter - $arrow-width) / 2;
+      width: $arrow-width;
+      height: $arrow-height;
     }
   }
   @include tablet {
     height: 85px;
     font-size: 14px;
+    line-height: 1.3em;
     &.expanded {
       height: auto;
     }
@@ -127,43 +128,21 @@
     height: auto;
     font-size: 16px;
     line-height: 1.5em;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.75;
-      z-index: -1;
-      .teal-bg {
-        background: $secondary-teal;
-      }
-      .turquoise-bg {
-        background: $secondary-turquoise;
-      }
-      .pink-bg {
-        background: $secondary-pink;
-      }
-    }
     .expand-collapse {
       display: none;
     }
   }
 }
 
-.teal-filter:before,
-.teal-bg {
+.teal-filter:before {
   background: $secondary-teal;
 }
 
-.turquoise-filter:before,
-.turquoise-bg {
+.turquoise-filter:before {
   background: $secondary-turquoise;
 }
 
-.pink-filter:before,
-.pink-bg {
+.pink-filter:before {
   background: $secondary-pink;
 }
 
@@ -173,13 +152,6 @@
   line-height: 1.5em;
   p {
     margin: 0;
-  }
-  a {
-    color: $primary-pink;
-    text-decoration: none;
-    &:hover {
-      border-bottom: 2px solid $primary-pink;
-    }
   }
   @include desktop {
     font-size: 24px;
@@ -206,6 +178,12 @@
     }
     @include phone {
       margin: $large-margin 0;
+    }
+  }
+  .expand-collapse {
+    display: none;
+    @include desktop {
+      display: block;
     }
   }
 }

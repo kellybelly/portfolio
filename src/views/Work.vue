@@ -17,20 +17,17 @@
         <img src="../assets/brilliant.png">
       </div>
 
-      <div class="work-description teal-bg" v-bind:class="{ expanded: isBrilliantExpanded }"><div>
+      <div class="work-description" v-bind:class="{ expanded: isBrilliantExpanded }"><div>
         <p>
           <strong>Brilliant</strong> helps people master math and science concepts through
-          interactive, problem solving based courses. I worked as a software engineer for three
-          years: leading the frontend team, implementing many redesigns and new features.
-          Eventually, I found myself questioning why I am implementing these changes and began to
-          strategize new change and thus, transitioning to product management.
+          interactive, problem solving based courses. I worked as a software engineer and led the frontend team. As a team lead, I took on project management responsibilities &mdash; triaging frontend bugs and owning technical frontend architecture projects. Eventually, a product manager position opened up, and I jumped at the opportunity.
         </p>
 
         <p>
           <a href="https://brilliant.org/">Go to website. &rarr;</a>
         </p>
 
-        <button class="expand-collapse teal-bg" v-on:click="isBrilliantExpanded = !isBrilliantExpanded">
+        <button class="expand-collapse" v-on:click="isBrilliantExpanded = !isBrilliantExpanded">
           <img src="../assets/arrow.png">
         </button>
       </div></div>
@@ -41,21 +38,21 @@
         <img src="../assets/gdi.png">
       </div>
 
-      <div class="work-description turquoise-bg" v-bind:class="{ expanded: isGDIExpanded }"><div>
+      <div class="work-description" v-bind:class="{ expanded: isGDIExpanded }"><div>
         <p>
-          <strong>Girl Develop It</strong> is a nonprofit organization with over 100,000+ members
-          in 58 cities. I co-lead the San Francisco chapter, which has over 8,800+ members. In 2017,
+          <strong>Girl Develop It</strong> is a nonprofit organization with over 108,000+ members
+          in 62 cities. I co-lead the San Francisco chapter, which has over 9,100+ members. In 2017,
           we hosted 49 workshops and events, awarded 53 scholarships to our worshops, and raised
-          $12,312 at our annual fundraiser which goes towards our mission of empowering women.
+          $12,312 at our annual fundraiser towards our mission to include and empower women and non-binary folks in developing the future of technology.
         </p>
 
         <p>
           <a href="https://www.meetup.com/Girl-Develop-It-San-Francisco/">
-            Check out upcoming workshops and events! &rarr;
+            Check out our upcoming workshops and events! &rarr;
         </a>
         </p>
 
-        <button class="expand-collapse turquoise-bg" v-on:click="isGDIExpanded = !isGDIExpanded">
+        <button class="expand-collapse" v-on:click="isGDIExpanded = !isGDIExpanded">
           <img src="../assets/arrow.png">
         </button>
       </div></div>
@@ -66,7 +63,7 @@
         <img src="../assets/getschooled.png">
       </div>
 
-      <div class="work-description pink-bg" v-bind:class="{ expanded: isGSExpanded }"><div>
+      <div class="work-description" v-bind:class="{ expanded: isGSExpanded }"><div>
         <p>
           <strong>GetSchooled</strong> was originally conceived at the MasterCard Masters of Code
           Hackathon in San Francisco, where it won 2nd place. The focus of the hackathon was on
@@ -79,7 +76,7 @@
           <a href="http://getschooled.herokuapp.com/">Go to website. &rarr;</a>
         </p>
 
-        <button class="expand-collapse pink-bg" v-on:click="isGSExpanded = !isGSExpanded">
+        <button class="expand-collapse" v-on:click="isGSExpanded = !isGSExpanded">
           <img src="../assets/arrow.png">
         </button>
       </div></div>
@@ -90,9 +87,9 @@
         <img src="../assets/continu.png">
       </div>
 
-      <div class="work-description teal-bg" v-bind:class="{ expanded: isContinuExpanded }"><div>
+      <div class="work-description" v-bind:class="{ expanded: isContinuExpanded }"><div>
         <p>
-          <strong>Continu</strong> is a learning platform used companies to manage training and
+          <strong>Continu</strong> is a learning platform used bycompanies to manage training and
           empower collaboration. I worked as a full stack engineer, working on infrastructure,
           backend, and frontend.
         </p>
@@ -101,7 +98,7 @@
           <a href="https://www.continu.co/">Go to website. &rarr;</a>
         </p>
 
-        <button class="expand-collapse teal-bg" v-on:click="isContinuExpanded = !isContinuExpanded">
+        <button class="expand-collapse" v-on:click="isContinuExpanded = !isContinuExpanded">
           <img src="../assets/arrow.png">
         </button>
       </div></div>
@@ -112,14 +109,14 @@
         <img src="../assets/netsocket.jpg">
       </div>
 
-      <div class="work-description turquoise-bg" v-bind:class="{ expanded: isNetsocketExpanded }"><div>
+      <div class="work-description" v-bind:class="{ expanded: isNetsocketExpanded }"><div>
         <p>
           <strong>Netsocket</strong> developed network virtualization and software-defined
           networking products. I worked on the web applications for these products whick allowed
           users to monitor and visualize their network data in real time.
         </p>
 
-        <button class="expand-collapse turquoise-bg" v-on:click="isNetsocketExpanded = !isNetsocketExpanded">
+        <button class="expand-collapse" v-on:click="isNetsocketExpanded = !isNetsocketExpanded">
           <img src="../assets/arrow.png">
         </button>
       </div></div>
