@@ -29,9 +29,10 @@
   }
   a {
     color: $primary-pink;
+    border-bottom: 2px solid $white;
     text-decoration: none;
     &:hover {
-      border-bottom: 2px solid $primary-pink;
+      border-bottom-color: $primary-pink;
     }
   }
   @include desktop {
@@ -94,8 +95,7 @@
     margin: 0;
   }
   a {
-    display: block;
-    text-align: right;
+    float: right;
   }
   .expand-collapse {
     $circle-diameter: 32px;
