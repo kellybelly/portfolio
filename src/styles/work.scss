@@ -93,6 +93,10 @@
   p {
     margin: 0;
   }
+  a {
+    display: block;
+    text-align: right;
+  }
   .expand-collapse {
     $circle-diameter: 32px;
     $arrow-width: 16px;

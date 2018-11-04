@@ -10,7 +10,8 @@ npm run build
 cd dist
 
 # add custom domain
-echo -e 'kelly-tran.com\nwww.kelly-tran.com' > CNAME
+echo 'kelly-tran.com' >> CNAME
+echo 'www.kelly-tran.com' >> CNAME
 
 git init
 git add -A
